@@ -30,8 +30,8 @@ Este projeto demonstra a construção de uma aplicação web comercial moderna, 
 Clone o repositório e instale as dependências:
 
 ```bash
-git clone <url-do-repositorio>
-cd projeto-web-comercial
+git clone https://github.com/mths0303s/landing-page-vanilla-js.git
+cd landing-page-vanilla-js
 npm install
 ```
 
