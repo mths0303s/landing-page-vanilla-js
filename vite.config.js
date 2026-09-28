@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+  base: '/landing-page-vanilla-js/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
