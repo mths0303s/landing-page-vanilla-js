@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light" data-contrast="normal">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projeto web comercial desenvolvido com HTML5, CSS3 e JavaScript vanilla, com foco em acessibilidade, responsividade e desempenho." />
+    <meta name="theme-color" content="#0d6efd" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>MB Web · Projeto Web Comercial</title>
+    <link rel="stylesheet" href="/src/css/variables.css" />
+    <link rel="stylesheet" href="/src/css/base.css" />
+    <link rel="stylesheet" href="/src/css/layout.css" />
+    <link rel="stylesheet" href="/src/css/components.css" />
+    <link rel="stylesheet" href="/src/css/accessibility.css" />
+    <link rel="stylesheet" href="/src/css/responsive.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Saltar para o conteúdo principal</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="logo" href="#inicio" aria-label="MB Web, página inicial">
+          <span class="logo-mark" aria-hidden="true">MB</span>
+          <span class="logo-text">MB Web</span>
+        </a>
+
+        <nav id="primary-nav" class="primary-nav" aria-label="Navegação principal">
+          <ul class="nav-list" role="list">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#processo">Processo</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            type="button"
+            id="theme-toggle"
+            class="icon-button"
+            aria-label="Alternar modo escuro"
+            aria-pressed="false"
+          >
+            <span class="icon" aria-hidden="true" data-icon="theme">🌙</span>
+            <span class="visually-hidden">Alternar modo escuro</span>
+          </button>
+
+          <button
+            type="button"
+            id="contrast-toggle"
+            class="icon-button"
+            aria-label="Alternar alto contraste"
+            aria-pressed="false"
+          >
+            <span class="icon" aria-hidden="true" data-icon="contrast">◐</span>
+            <span class="visually-hidden">Alternar alto contraste</span>
+          </button>
+
+          <button
+            type="button"
+            id="menu-toggle"
+            class="menu-toggle"
+            aria-label="Abrir menu de navegação"
+            aria-expanded="false"
+            aria-controls="primary-nav"
+          >
+            <span class="menu-bar" aria-hidden="true"></span>
+            <span class="menu-bar" aria-hidden="true"></span>
+            <span class="menu-bar" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <section id="inicio" class="hero" aria-labelledby="hero-title">
+        <div class="container hero-inner">
+          <p class="eyebrow">Projeto Web Comercial</p>
+          <h1 id="hero-title" class="hero-title">
+            Uma aplicação web preparada para diferentes dispositivos.
+          </h1>
+          <p class="hero-description">
+            Projeto desenvolvido com foco em estrutura semântica, experiência
+            do utilizador, acessibilidade, responsividade e desempenho.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contacto">Falar com a equipe</a>
+            <a class="button button-secondary" href="#servicos">Ver recursos</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre" class="section" aria-labelledby="sobre-title">
+        <div class="container">
+          <header class="section-header">
+            <p class="eyebrow">Sobre o projeto</p>
+            <h2 id="sobre-title" class="section-title">Proposta técnica</h2>
+            <p class="section-description">
+              A aplicação foi organizada em módulos independentes para facilitar
+              a manutenção, a evolução e o versionamento em Git. O foco está em
+              qualidade de código, acessibilidade e desempenho.
+            </p>
+          </header>
+
+          <div class="stats-grid">
+            <article class="stat-card">
+              <p class="stat-value">100%</p>
+              <h3 class="stat-title">Responsividade</h3>
+              <p class="stat-description">
+                Layout fluido testado entre 320px e 1440px, sem overflow horizontal.
+              </p>
+            </article>
+
+            <article class="stat-card">
+              <p class="stat-value">A11y</p>
+              <h3 class="stat-title">Acessibilidade</h3>
+              <p class="stat-description">
+                HTML semântico, landmarks, labels associadas e suporte completo a teclado.
+              </p>
+            </article>
+
+            <article class="stat-card">
+              <p class="stat-value">Vite</p>
+              <h3 class="stat-title">Build otimizado</h3>
+              <p class="stat-description">
+                JavaScript e CSS minificados, assets organizados e build de produção pronto.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicos" class="section section-alt" aria-labelledby="servicos-title">
+        <div class="container">
+          <header class="section-header">
+            <p class="eyebrow">Recursos</p>
+            <h2 id="servicos-title" class="section-title">O que está incluído</h2>
+            <p class="section-description">
+              Conjunto de recursos essenciais para uma aplicação web comercial moderna.
+            </p>
+          </header>
+
+          <div class="features-grid">
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">📱</div>
+              <h3 class="feature-title">Interfaces responsivas</h3>
+              <p class="feature-description">
+                Layouts fluidos com CSS Grid, Flexbox e unidades relativas
+                para uma experiência consistente em qualquer ecrã.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">♿</div>
+              <h3 class="feature-title">Acessibilidade</h3>
+              <p class="feature-description">
+                Estrutura semântica, ARIA aplicado com critério, skip link,
+                foco visível e navegação por teclado.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">⚡</div>
+              <h3 class="feature-title">Desempenho</h3>
+              <p class="feature-description">
+                Build com Vite, minificação de CSS e JavaScript e ausência
+                de dependências desnecessárias.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">✅</div>
+              <h3 class="feature-title">Validação</h3>
+              <p class="feature-description">
+                Formulários com validação em JavaScript, mensagens específicas
+                e comunicação assistiva via <code>aria-live</code>.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">🎨</div>
+              <h3 class="feature-title">Temas</h3>
+              <p class="feature-description">
+                Suporte a modo claro, modo escuro e alto contraste com preferências
+                persistidas em <code>localStorage</code>.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">🧩</div>
+              <h3 class="feature-title">Componentização</h3>
+              <p class="feature-description">
+                JavaScript modular em ES Modules e CSS organizado por responsabilidade,
+                facilitando manutenção e evolução.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="processo" class="section" aria-labelledby="processo-title">
+        <div class="container">
+          <header class="section-header">
+            <p class="eyebrow">Como trabalhamos</p>
+            <h2 id="processo-title" class="section-title">Processo em três etapas</h2>
+            <p class="section-description">
+              Um fluxo simples, previsível e adequado a projetos comerciais.
+            </p>
+          </header>
+
+          <ol class="process-grid" role="list">
+            <li class="process-card">
+              <span class="process-step" aria-hidden="true">01</span>
+              <h3 class="process-title">Planeamento</h3>
+              <p class="process-description">
+                Definição da estrutura visual, componentes, requisitos de
+                acessibilidade e comportamento responsivo.
+              </p>
+            </li>
+
+            <li class="process-card">
+              <span class="process-step" aria-hidden="true">02</span>
+              <h3 class="process-title">Implementação</h3>
+              <p class="process-description">
+                Desenvolvimento das interfaces e funcionalidades em módulos
+                e branches isoladas.
+              </p>
+            </li>
+
+            <li class="process-card">
+              <span class="process-step" aria-hidden="true">03</span>
+              <h3 class="process-title">Validação</h3>
+              <p class="process-description">
+                Testes de responsividade, teclado, formulário, acessibilidade e build.
+              </p>
+            </li>
+          </ol>
+
+          <div class="process-actions">
+            <button type="button" class="button button-primary" data-open-modal="details-modal">
+              Ver detalhes técnicos
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section section-alt" aria-labelledby="faq-title">
+        <div class="container container-narrow">
+          <header class="section-header">
+            <p class="eyebrow">Perguntas frequentes</p>
+            <h2 id="faq-title" class="section-title">FAQ</h2>
+            <p class="section-description">
+              Respostas rápidas às dúvidas mais comuns sobre o projeto.
+            </p>
+          </header>
+
+          <div class="faq-list" data-faq>
+            <div class="faq-item">
+              <h3>
+                <button
+                  type="button"
+                  class="faq-question"
+                  id="faq-question-1"
+                  aria-expanded="false"
+                  aria-controls="faq-answer-1"
+                >
+                  <span>O projeto é responsivo?</span>
+                  <span class="faq-icon" aria-hidden="true">+</span>
+                </button>
+              </h3>
+              <div
+                id="faq-answer-1"
+                class="faq-answer"
+                role="region"
+                aria-labelledby="faq-question-1"
+                hidden
+              >
+                <p>
+                  Sim. O layout é fluido e foi testado entre 320px e 1440px,
+                  utilizando CSS Grid, Flexbox, media queries e unidades relativas.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <h3>
+                <button
+                  type="button"
+                  class="faq-question"
+                  id="faq-question-2"
+                  aria-expanded="false"
+                  aria-controls="faq-answer-2"
+                >
+                  <span>Existe suporte a teclado?</span>
+                  <span class="faq-icon" aria-hidden="true">+</span>
+                </button>
+              </h3>
+              <div
+                id="faq-answer-2"
+                class="faq-answer"
+                role="region"
+                aria-labelledby="faq-question-2"
+                hidden
+              >
+                <p>
+                  Sim. Todos os componentes interativos podem ser operados por
+                  teclado, com foco visível, skip link e suporte à tecla Escape
+                  no menu e no modal.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <h3>
+                <button
+                  type="button"
+                  class="faq-question"
+                  id="faq-question-3"
+                  aria-expanded="false"
+                  aria-controls="faq-answer-3"
+                >
+                  <span>Como o projeto é preparado para produção?</span>
+                  <span class="faq-icon" aria-hidden="true">+</span>
+                </button>
+              </h3>
+              <div
+                id="faq-answer-3"
+                class="faq-answer"
+                role="region"
+                aria-labelledby="faq-question-3"
+                hidden
+              >
+                <p>
+                  O comando <code>npm run build</code> executa o Vite, que
+                  minifica JavaScript e CSS, organiza os assets e gera a
+                  pasta <code>dist/</code> pronta para publicação.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <h3>
+                <button
+                  type="button"
+                  class="faq-question"
+                  id="faq-question-4"
+                  aria-expanded="false"
+                  aria-controls="faq-answer-4"
+                >
+                  <span>O formulário envia dados para uma API?</span>
+                  <span class="faq-icon" aria-hidden="true">+</span>
+                </button>
+              </h3>
+              <div
+                id="faq-answer-4"
+                class="faq-answer"
+                role="region"
+                aria-labelledby="faq-question-4"
+                hidden
+              >
+                <p>
+                  Não. Nesta versão o envio é simulado no lado do cliente para
+                  demonstrar a validação e o estado de sucesso. A integração
+                  com uma API real pode ser adicionada no módulo de validação.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="section" aria-labelledby="contacto-title">
+        <div class="container container-narrow">
+          <header class="section-header">
+            <p class="eyebrow">Fale connosco</p>
+            <h2 id="contacto-title" class="section-title">Formulário de contacto</h2>
+            <p class="section-description">
+              Preencha os campos abaixo e a nossa equipa entrará em contacto.
+            </p>
+          </header>
+
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-field">
+              <label for="field-name">
+                Nome <span class="required" aria-hidden="true">*</span>
+              </label>
+              <input
+                type="text"
+                id="field-name"
+                name="name"
+                autocomplete="name"
+                required
+                minlength="2"
+                aria-required="true"
+                aria-describedby="error-name"
+              />
+              <p id="error-name" class="field-error" data-error-for="field-name"></p>
+            </div>
+
+            <div class="form-field">
+              <label for="field-email">
+                E-mail <span class="required" aria-hidden="true">*</span>
+              </label>
+              <input
+                type="email"
+                id="field-email"
+                name="email"
+                autocomplete="email"
+                required
+                aria-required="true"
+                aria-describedby="error-email"
+              />
+              <p id="error-email" class="field-error" data-error-for="field-email"></p>
+            </div>
+
+            <div class="form-field">
+              <label for="field-phone">Telefone</label>
+              <input
+                type="tel"
+                id="field-phone"
+                name="phone"
+                autocomplete="tel"
+                inputmode="tel"
+                aria-describedby="error-phone hint-phone"
+              />
+              <p id="hint-phone" class="field-hint">Opcional. Mínimo de 8 dígitos.</p>
+              <p id="error-phone" class="field-error" data-error-for="field-phone"></p>
+            </div>
+
+            <div class="form-field">
+              <label for="field-message">
+                Mensagem <span class="required" aria-hidden="true">*</span>
+              </label>
+              <textarea
+                id="field-message"
+                name="message"
+                rows="5"
+                required
+                minlength="10"
+                aria-required="true"
+                aria-describedby="error-message"
+              ></textarea>
+              <p id="error-message" class="field-error" data-error-for="field-message"></p>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="button button-primary">Enviar mensagem</button>
+              <button type="reset" class="button button-secondary">Limpar</button>
+            </div>
+
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="logo-mark" aria-hidden="true">MB</span>
+          <div>
+            <p class="footer-title">MB Web</p>
+            <p class="footer-copy">© <span id="footer-year"></span> Projeto acadêmico e comercial.</p>
+          </div>
+        </div>
+
+        <nav aria-label="Navegação do rodapé">
+          <ul class="footer-nav" role="list">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <div
+      class="modal"
+      id="details-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="details-modal-title"
+      aria-describedby="details-modal-description"
+      hidden
+    >
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-dialog" role="document">
+        <header class="modal-header">
+          <h2 id="details-modal-title" class="modal-title">Detalhes técnicos</h2>
+          <button
+            type="button"
+            class="modal-close"
+            aria-label="Fechar modal"
+            data-close-modal
+          >
+            ×
+          </button>
+        </header>
+        <div class="modal-body" id="details-modal-description">
+          <p>
+            Este projeto foi construído com HTML5 semântico, CSS3 modular e
+            JavaScript vanilla organizado em ES Modules, empacotado com Vite.
+          </p>
+          <ul>
+            <li>Estrutura de arquivos separada por responsabilidade.</li>
+            <li>Modo claro, modo escuro e alto contraste.</li>
+            <li>Suporte completo a teclado e leitores de ecrã.</li>
+            <li>Build de produção minificado para publicação.</li>
+          </ul>
+        </div>
+        <footer class="modal-footer">
+          <button type="button" class="button button-primary" data-close-modal>
+            Entendi
+          </button>
+        </footer>
+      </div>
+    </div>
+
+    <div
+      class="modal"
+      id="confirm-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="confirm-modal-title"
+      aria-describedby="confirm-modal-description"
+      hidden
+    >
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-dialog" role="document">
+        <header class="modal-header">
+          <h2 id="confirm-modal-title" class="modal-title">Mensagem enviada</h2>
+          <button
+            type="button"
+            class="modal-close"
+            aria-label="Fechar modal"
+            data-close-modal
+          >
+            ×
+          </button>
+        </header>
+        <div class="modal-body" id="confirm-modal-description">
+          <p>
+            Obrigado pelo seu contacto! A sua mensagem foi processada com sucesso
+            e a nossa equipa responderá em breve.
+          </p>
+        </div>
+        <footer class="modal-footer">
+          <button type="button" class="button button-primary" data-close-modal>
+            Fechar
+          </button>
+        </footer>
+      </div>
+    </div>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
